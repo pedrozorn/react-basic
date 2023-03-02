@@ -1,0 +1,12 @@
+  version: '3'
+  
+  services:
+    react-sample:
+      container_name: react-sample
+      build:
+        context: workspace
+      tty: true
+      volumes:
+        - ./workspace:/workspace
+      ports:
+        - 3000:3000
